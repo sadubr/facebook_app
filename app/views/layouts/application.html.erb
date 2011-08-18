@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <title>FacebookApp</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
+  <%= javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" %>
+  <%= javascript_include_tag "jquery-rails.js" %>
+  <%= csrf_meta_tag %>
+
+  <script>
+  $(document).ready(function() {
+
+	});
+	</script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+

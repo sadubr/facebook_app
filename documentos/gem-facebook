@@ -1,0 +1,9 @@
+ =begin
+    aplicaçao usando gem
+    @app = FbGraph::Application.new(FB_APP_ID, :secret => FB_SECRET)
+    @result = FbGraph::User.fetch('vitorfran', :access_token => ACCESS_TOKEN)
+    @me = FbGraph::User.me(ACCESS_TOKEN)
+    @session = session[:user] = 'test'
+    session[:me] = FbGraph::User.me(ACCESS_TOKEN)
+    =end
+

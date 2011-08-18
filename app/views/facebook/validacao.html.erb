@@ -1,0 +1,52 @@
+
+
+<%= @code.inspect %>
+<br/>
+<br/>
+<%= @chegando.inspect %>
+<br/>
+<br/>
+<%= session[:user].inspect %>
+<br/>
+<br/>
+
+<%= link_to 'outra pagina', 'callback' %>
+
+<br/>
+<br />
+<section>
+  <% if session[:user].nil? %>
+    <header>Faça o login pelo facebook </header>
+    <p><%= link_to 'login facebook' , @facebook_login %></p>
+
+  <% else %>
+     <header>Obrigado vc se encontra logado ! </header>
+    <p><%= link_to 'log out' , @facebook_login %></p>
+  <% end %>
+</section>
+
+  <div id="fb-root"></div>
+      <script src="http://connect.facebook.net/en_US/all.js"></script>
+      <script>
+         FB.init({
+            appId:'105519826206949', cookie:true,
+            status:true, xfbml:true
+         });
+      </script>
+<fb:login-button>Login with Facebook</fb:login-button>
+
+
+<br/>
+<br/>
+<section>
+  <header>Utilizar para pegar Acess_Token </header>
+<%= link_to 'pegando token url', @access_token_url %>
+</section>
+<hr/>
+<br />
+
+<section>
+  <header>Faça propaganda nossa e ganhe com isto </header>
+<%= link_to 'Gostou? entao publique no facebook', @wallpublish %>
+</section>
+

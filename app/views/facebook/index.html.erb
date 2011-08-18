@@ -1,0 +1,105 @@
+<h1>Facebook#index</h1>
+
+
+
+
+
+<%= link_to 'test url callback', @urlcallback %>
+
+<br />
+<br />
+
+<br />
+
+
+
+
+<h1>triquilha</h1>
+
+
+    <p> botao simples do facebook criando 1 like </p>
+    <p><fb:like></fb:like></p>
+
+
+    <p> dando like aparecendo no wall e ainda postando mensagem para usuario caso queira</p>
+    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=154132764658706&amp;xfbml=1"></script><fb:like href="http://triquilha.com.br" send="true" width="450" show_faces="true" font=""></fb:like>
+
+
+
+
+<br/>
+
+
+<br />
+<br />
+
+<br />
+
+
+
+<%= link_to 'Login Facebook ','https://www.facebook.com/dialog/oauth?client_id=105519826206949
+     &redirect_uri=http://apps.facebook.com/app_facebok/&scope=email,read_stream, manage_pages, offline_access, publish_stream, user_likes, friends_likes, friends_about_me, user_about_me'%>
+
+<br />
+<br />
+
+<br />
+<p><%= link_to 'access_token', @access_token_url %></p>
+
+
+<br />
+<p><%= link_to 'grap-url', @graph_url %></p>
+
+
+<p><%= link_to 'wall pub', @wallpublish  %></p>
+
+
+<p><%= link_to 'feed url', @feed_url %></p>
+
+<p><%= link_to 'listagem amigos', @listagem_amigos %></p>
+
+<p><%= link_to 'convit amigos', @convit %></p>
+
+
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://apps.facebook.com/app_facebok/?code=U9MmcYOsBHJs3RrK2WMN_rBXB0RHW2YhaD2ISNsRNfM.eyJpdiI6Ilk2MHZvbUI1TDNodzM0c2hzM3l4WkEifQ._UHXynbcVNnSfN73NhAq7skn2Hd_X-gCVeVP478VIqOGZjy-NffIqU6tZpdMdaTqWXmd3rHi6j7AYFzoBY5AWN2jPFPBtSNVkIREcCxZu-q00Id8d9MRrIR4cZw2VjPl" send="true" width="450" show_faces="true" font=""></fb:like>
+
+<br />
+<br />
+<br />
+
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/cocacola" width="592" show_faces="true" border_color="" stream="true" force_wall="false" header="true"></fb:like-box>
+
+<br/>
+<br />
+
+<p> Faça um comentario </p>
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="triquilha.com.br" num_posts="2" width="500"></fb:comments>
+
+<br/>
+<br />
+
+<p> Box Recomendaçao </p>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:recommendations site="www.triquilha.com.br" width="300" height="300" header="true" font="" border_color=""></fb:recommendations>
+
+
+
+<br/>
+<br />
+
+<p> Box Login button </p>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+
+
+<br/>
+<br />
+
+<p> Box Login registration </p>
+<fb:registration
+            fields="[{'name':'name'}, {'name':'email'},
+            {'name':'favorite_car','description':'What is your favorite car?',
+            'type':'text'}]" redirect-uri="http://localhost:3000/facebook/index">
+    </fb:registration>
+
+    <br/>
+    <br/>
+

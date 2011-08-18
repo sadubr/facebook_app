@@ -1,0 +1,10 @@
+ =begin
+
+    efetuando post no wall via terminal do linux
+
+    curl -F 'access_token=105519826206949|8f12acd6206fa53c8e61de8b.1-100002098253158|f6unvHDryjZTbgj_V2Cf-7gGRdI' \
+     -F 'message=Mensagem enviada apartir do terminal do linux.' \
+     https://graph.facebook.com/me/feed
+
+    =end
+
